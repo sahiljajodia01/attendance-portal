@@ -1,0 +1,638 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DJSCE Attendance Portal</title>
+
+    <link rel="stylesheet" href="{% static 'index/css/w3.css' %}">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'index/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'index/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="{% static 'index/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+
+
+    <!-- Theme CSS -->
+    <link href="{% static 'index/css/creative.min.css' %}" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">D.J.S.C.E</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About us</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#bio">Biomedical</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#chem">Chemical</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#comps">Computer</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#elec">Electronics</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#extc">EXTC</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#it">IT</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#mech">Mechanical</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#prod">Production</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header style="background-image: url('{% static 'index/images/books.jpg' %}');">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <br>
+                <h1 id="homeHeading">This is where you get your internal KT's</h1>
+                <hr>
+                <p>We provide you with a one-stop portal for all the attendance-related matters you will ever face! We have something for everybody!</p>
+                <a href="/admin/" class="btn btn-primary btn-xl">LOGIN (For Teachers)</a>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">We've got what you need!</h2>
+                    <hr class="light">
+                    <p class="text-faded"></p>
+                    <a href="#bio" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style='background-image: url("{% static 'index/images/bio.jpg' %}"); background-size: cover; background-position: center;'>
+    <section id="bio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style = "color: #FFFFFF">Biomedical Engineering</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv')">FE</button></p>
+
+                        <br>
+                        <div id = "myDiv" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv1')">SE</button></p>
+
+                        <br>
+                        <div id = "myDiv1" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv2')">TE</button></p>
+
+                        <br>
+                        <div id = "myDiv2" style="display:none"> <button class="w3-button w3-red w3-xlarge" >A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv3')">BE</button></p>
+
+                        <br>
+                        <div id = "myDiv3" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div style="background-color: #F05F40;"><br></div>
+
+    <div style='background-image: url("{% static 'index/images/chem.jpg' %}"); background-size: cover; background-position: center;'>
+    <section id="chem">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Chemical Engineering</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv4')">FE</button></p>
+
+                        <br>
+                        <div id = "myDiv4" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv5')">SE</button></p>
+
+                        <br>
+                        <div id = "myDiv5" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv6')">TE</button></p>
+
+                        <br>
+                        <div id = "myDiv6" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv7')">BE</button></p>
+
+                        <br>
+                        <div id = "myDiv7" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div style="background-color: #F05F40;"><br></div>
+
+    <div style='background-image: url("{% static 'index/images/header.jpg' %}"); background-size: cover; background-position: center;'>
+    <section id="comps">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="color:#ffffff">Computer Engineering</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv8')">FE</button></p>
+
+                        <br>
+                        <div id = "myDiv8" style="display:none"><a href="../compsFE/"> <button class="w3-button w3-red w3-xlarge">A</button></a>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv9')">SE</button></p>
+
+                        <br>
+                        <div id = "myDiv9" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                            <a href="../compsSE/"><button class="w3-button w3-red w3-xlarge">B</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv10')">TE</button></p>
+
+                        <br>
+                        <div id = "myDiv10" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv11')">BE</button></p>
+
+                        <br>
+                        <div id = "myDiv11" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div style="background-color: #F05F40;"><br></div>
+
+    <div style='background-image: url("{% static 'index/images/elec.jpg' %}"); background-size: cover; background-position: center;'>
+    <section id="elec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="color:#ffffff">Electronics Engineering</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv12')">FE</button></p>
+
+                        <br>
+                        <div id = "myDiv12" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv13')">SE</button></p>
+
+                        <br>
+                        <div id = "myDiv13" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv14')">TE</button></p>
+
+                        <br>
+                        <div id = "myDiv14" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv15')">BE</button></p>
+
+                        <br>
+                        <div id = "myDiv15" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div style="background-color: #F05F40;"><br></div>
+
+    <div style='background-image: url("{% static 'index/images/extc.jpg' %}"); background-size: cover; background-position: center;'>
+    <section id="extc">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="color:#ffffff">EXTC Engineering</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv16')">FE</button></p>
+
+                        <br>
+                        <div id = "myDiv16" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv17')">SE</button></p>
+
+                        <br>
+                        <div id = "myDiv17" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv18')">TE</button></p>
+
+                        <br>
+                        <div id = "myDiv18" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv19')">BE</button></p>
+
+                        <br>
+                        <div id = "myDiv19" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div style="background-color: #F05F40;"><br></div>
+
+    <div style='background-image: url("{% static 'index/images/it.jpg' %}"); background-size: cover; background-position: center;'>
+    <section id="it">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="color:#ffffff">IT Engineering</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv20')">FE</button></p>
+
+                        <br>
+                        <div id = "myDiv20" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv21')">SE</button></p>
+
+                        <br>
+                        <div id = "myDiv21" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv22')">TE</button></p>
+
+                        <br>
+                        <div id = "myDiv22" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv23')">BE</button></p>
+
+                        <br>
+                        <div id = "myDiv23" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div style="background-color: #F05F40;"><br></div>
+
+    <div style='background-image: url("{% static 'index/images/mech.jpg' %}"); background-size: cover; background-position: center;'>
+    <section id="mech">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="color:#ffffff">Mechanical Engineering</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv24')">FE</button></p>
+
+                        <br>
+                        <div id = "myDiv24" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv25')">SE</button></p>
+
+                        <br>
+                        <div id = "myDiv25" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                            <a href="../mechSE/"><button class="w3-button w3-red w3-xlarge">B</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv26')">TE</button></p>
+
+                        <br>
+                        <div id = "myDiv26" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv27')">BE</button></p>
+
+                        <br>
+                        <div id = "myDiv27" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div style="background-color: #F05F40;"><br></div>
+
+    <div style='background-image: url("{% static 'index/images/prod.jpg' %}"); background-size: cover; background-position: center;'>
+    <section id="prod">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="color:#ffffff">Production Engineering</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv28')">FE</button></p>
+
+                        <br>
+                        <div id = "myDiv28" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv29')">SE</button></p>
+
+                        <br>
+                        <div id = "myDiv29" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv30')">TE</button></p>
+
+                        <br>
+                        <div id = "myDiv30" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p><button class="w3-button w3-red w3-xxxlarge w3-round-xxlarge" onclick="myFunction('myDiv31')">BE</button></p>
+
+                        <br>
+                        <div id = "myDiv31" style="display:none"> <button class="w3-button w3-red w3-xlarge">A</button>
+                        <button class="w3-button w3-red w3-xlarge">B</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div style="background-color: #F05F40;"><br></div>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Ready to get an internal KT? That's great! Give us a call or DON'T and we will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>123-456-6789</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">admin.djsce@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="{% static 'index/jquery/jquery.min.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'index/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="{% static 'index/scrollreveal/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'index/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="{% static 'index/js/creative.min.js' %}"></script>
+    <script>
+    function myFunction(type1) {
+        var x = document.getElementById(type1);
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+
+</html>

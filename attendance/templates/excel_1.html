@@ -1,0 +1,35 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSV</title>
+    <link rel="stylesheet" href="{% static 'Subjects/css/bootstrap.min.css' %}">
+
+</head>
+<body>
+    <table class="table">
+            {% for row in file %}
+                <tr>
+
+                    {% for i in row %}
+                        <td>{{ i }}</td>
+                    {% endfor %}
+
+                </tr>
+            {% endfor %}
+
+    </table>
+    <br>
+    <br>
+
+
+    <!-- Google Drive Excel Sheet
+    <iframe src="https://drive.google.com/open?id=1bc1mS-rW02cYBqFLMDhG-2ix5vRbKvAB9Z8oH-2mY90" width=100% height="800px" ></iframe>
+    -->
+
+
+
+</body>
+</html>
