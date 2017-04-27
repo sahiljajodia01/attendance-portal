@@ -22,6 +22,16 @@ class ExcelFilesResource(resources.ModelResource):
 
 class ExcelFilesAdmin(ImportExportModelAdmin , admin.ModelAdmin):
     resource_class = ExcelFilesResource
+    list_display = ["name", "sapID", "attendancePercent"]
+    list_display_links = ["name"]
+    list_filter = ["sapID", "name"]
+    search_fields = ["name", "sapID"]
+    list_editable = ["attendancePercent"]
+
+    class Meta:
+        model = ExcelFiles
+
+
 
 
 admin.site.register(ExcelFiles, ExcelFilesAdmin)
