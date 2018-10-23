@@ -25,7 +25,7 @@ Finally students can navigate to their respective branch -> year -> division -> 
 
 ___
 
-To run this on your PC, clone this repository and after navigating to the repository type in the terminal
+To run this on your PC, clone this repository and after navigating to the repository type the following command in the terminal
 ```
 pip install -r requirements.txt
 python manage.py runserver
